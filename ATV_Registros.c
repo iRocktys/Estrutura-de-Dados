@@ -1,6 +1,3 @@
-// Alunos: Leandro Martins Tosta e Eiti Parruca Adama
-// RA: 2232510 e 2232472
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
