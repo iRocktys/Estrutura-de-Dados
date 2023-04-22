@@ -12,4 +12,4 @@ As seguintes estruturas de dados foram implementadas neste repositório:
 - Fila (Queue)
 - Árvore Binária de Busca (Binary Search Tree)
 - Tabela de Dispersão (Hash Table)
-- Heap Binário (Binary Heap)
+
