@@ -1,10 +1,3 @@
-/*
-  Atividade 3 -  EDD2
-  Alunos e Ra
-  leandro Martins Tosta - 2232510
-  Eiti Parruca Adama - 2232472
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
