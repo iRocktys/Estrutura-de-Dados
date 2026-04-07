@@ -125,22 +125,26 @@ void merge(int vetor[], int comeco, int meio, int fim, int compMerge) {
         }
         i++;
     }
+    
     while(com1 <= meio) {
         vetAux[i] = vetor[com1];
         i++;
         com1++;
         compMerge++;
     }
+
     while(com2 <= fim) {
         vetAux[i] = vetor[com2];
         i++;
         com2++;
         compMerge++;
     }
+
     for(i = comeco; i <= fim; i++) {
         vetor[i] = vetAux[i-comeco];
         compMerge++;
     }
+    
     free(vetAux);
 }
 
