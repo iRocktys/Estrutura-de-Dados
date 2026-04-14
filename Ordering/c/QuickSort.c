@@ -1,39 +1,33 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <time.h>
+void QuickSort(int *vetor, int left, int right, int *compQuick) {
+    int i = left, j = right;
+    int x = vetor[(left + right) / 2];
+    int y;
 
-void QuickSort(int vetor[], int left, int right, int compQuick) {
-    int i, j, x, y;
-    i = left;
-    j = right;
-    x = vetor[(left + right) / 2];
     while(i <= j) {
         while(vetor[i] < x && i < right) {
+            (*compQuick)++;
             i++;
-            compQuick++;
         }
+        (*compQuick)++; // Falha da condição do loop
+
         while(vetor[j] > x && j > left) {
+            (*compQuick)++;
             j--;
-            compQuick++;
         }
+        (*compQuick)++; // Falha da condição do loop
+
         if(i <= j) {
             y = vetor[i];
             vetor[i] = vetor[j];
             vetor[j] = y;
             i++;
             j--;
-            compQuick++;
         }
     }
-
     if(j > left) {
         QuickSort(vetor, left, j, compQuick);
-        compQuick++;
     }
-
     if(i < right) {
         QuickSort(vetor, i, right, compQuick);
-        compQuick++;
     }
 }
